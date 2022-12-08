@@ -262,6 +262,7 @@ body {
 
 .visual::after {
   /* background-color: rgb(98, 240, 171); */
+  color: slategray;
   background: url('./images/ani_flower_03.png') no-repeat 40% 0, url('./images/ani_flower_04.png') no-repeat 80% 0;
   animation: fadeEffect 3s 1000ms infinite alternate;
   /* animation-delay: 1000ms; */

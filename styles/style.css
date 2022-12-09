@@ -368,11 +368,18 @@ body {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
   padding: 4px 10px;
+  /* 포지션 쓸떄 사용 */
+  display: flow-root;
 }
 
-.sign li {
+.sign li:first-child {
+  float: left;
   /* display: inline-block; */
   /* margin-right: 10px; */
+}
+
+.sign li:last-child {
+  float: right;
 }
 
 .sign a {

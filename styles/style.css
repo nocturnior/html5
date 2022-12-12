@@ -297,7 +297,6 @@ body {
   width: 250px;
 }
 .group2 {
-  background-color: salmon;
   width: 380px;
 }
 .group3 {
@@ -405,7 +404,7 @@ body {
   color: orangered;
 }
 
-/** WHAT -  유효성 검사 배너 */
+/** WHATsdf -  유효성 검사 배너 */
 .validation-list {
   /* background-color: rgb(154, 35, 252); */
   margin-top: 25px;
@@ -514,10 +513,12 @@ body {
   align-items: center;
   padding-right: 10px;
 }
+
 .form-group-label {
   flex-shrink: 0;
   margin-right: 10px;
 }
+
 .form-group-input {
   border: 1px solid #aaa;
   border-radius: 3px;
@@ -537,6 +538,73 @@ body {
   border-radius: 3px;
   padding: 0 10px;
   font-size: 1.2rem;
+}
+
+/* 공지사항 및 자료실 */
+.board {
+  position: relative;
+  margin-top: 20px;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab {
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  color: #333;
+}
+
+.is-select.tab {
+  background-color: #fff;
+  color: orangered;
+  border-color: currentColor currentColor #fff currentColor;
+}
+
+.tab-panel {
+  display: none;
+  margin-top: 15px;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-list li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.board-list a {
+  flex-grow: 1;
+
+  /* 줄바꿈 금지 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-list time {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.board-more {
+  position: absolute;
+  /* 🎇 클릭시 더 넓은 영역을 클릭하기 위해스 */
+  padding: 8px;
+  top: -8px;
+  right: -8px;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 40%, 1);
 }
 
 /* 슬로건 */

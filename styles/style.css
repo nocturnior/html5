@@ -633,6 +633,7 @@ body {
   width: 250px;
   padding-left: 130px;
   margin-top: 10px;
+  display: flow-root;
 }
 
 .news-title {
@@ -643,6 +644,7 @@ body {
 }
 
 .news-item-title {
+  float: right;
   width: 250px;
   font-size: 16px;
   font-weight: 700;
@@ -671,6 +673,8 @@ body {
 }
 
 .news-item-thumbnail figcaption {
+  background-color: rgb(229,87,110);
+  width: 112px;
   text-align: center;
 }
 

@@ -769,6 +769,41 @@ body {
   padding-bottom: 10px;
 }
 
+/* 인기사이트 */
+.favorite {
+  position: relative;
+}
+
+.favorite-list {
+  /* padding-left: 10px; */
+  /* 스크린 리더가 숫자를 안읽어줌 */
+  list-style: none;
+
+  /* 스크린 리더가 숫자를 읽어줌 */
+  /* overflow: hidden; */
+}
+
+.favorite-list li {
+  margin-top: 10px;
+}
+
+.favorite-list li::before {
+  content: '1';
+  background-color: #aaa;
+  color: #fff;
+  padding: 1px 6px;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.favorite-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
 /* 슬로건 */
 .slogan {
   background: skyblue;

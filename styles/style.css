@@ -24,9 +24,10 @@ body {
   color: #212121;
   font-size: 1.4rem;
   background: #ccc;
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue',
-    'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /* 레이아웃 */
@@ -59,6 +60,7 @@ body {
   background: #fff;
   min-height: 450px;
   display: flow-root;
+  padding: 30px 15px;
 }
 
 .group {
@@ -82,7 +84,7 @@ body {
   border: 1px solid #aaa;
   border-radius: 5px;
   padding: 10px;
-  background-color: #ccc linear-gradient(to bottom, #ccc, #eee);
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
 .text-xl {
@@ -90,43 +92,46 @@ body {
   font-weight: 700;
 }
 
+.accent-color {
+  color: #a52a2a;
+}
+
 .margin-top-default {
   margin-top: 20px;
 }
 
-.accent-color {
-  color: orangered;
+.event {
+  border-bottom: 1px solid #aaa;
+}
+
+.event-title {
+  /* background-color: pink; */
+  float: left;
 }
 
 .event-button-wrapper {
-  /* 버튼 가운데 정렬 */
-  /* display: flex;
+  /* background-color: yellow; */
+  display: flex;
   flex-flow: row nowrap;
-  align-items: center; */
-
-  overflow: hidden;
-  /* 부모요소를 높이지정함으로써 비쪄나오는 글씨를 안보이게 숨겨줌 */
-  height: 24px;
-  padding: 4px;
-  background-color: rgb(59, 140, 226);
+  justify-content: flex-end;
+  gap: 5px;
 }
 
 .event-button {
   width: 19px;
-  height: 18px;
   border: 0;
+  height: 18px;
   padding: 0;
-  text-indent: -9999px;
-  background: red url('./images/back_forward.png') no-repeat;
+  background: url("./images/back_forward.png") no-repeat;
 }
 
 .event-button-next {
-  background-position: -36px 0;
+  background-position: 100% 0;
 }
 
 .event-thumbnail,
 .event-brief {
-  margin-top: 10px 0;
+  margin: 10px 0;
 }
 
 .event-thumbnail img {
@@ -134,10 +139,11 @@ body {
   box-shadow: 5px 5px 0 0 #ccc;
 }
 
-/* 인기사이트 */
-/* .favorite {
-  margin-top: 20px;
-} */
+.related {
+  margin-top: 10px;
+}
+
+/* 인기 사이트 */
 
 /* 슬로건 */
 .slogan {

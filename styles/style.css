@@ -890,7 +890,15 @@ body {
 .footer {
   background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
+
 .footer-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   background: silver;
   height: 15vh;
+}
+
+.guide-list {
+  display: flex;
 }
